@@ -4,6 +4,8 @@
     --dark-background-color: #1f2937;
     --header-text-color: #f9faf8;
     --header-secondary-text-color: #e5e7eb;
+    --button-color: #3882f6;
+    --placeholder-color: #666;
 }
 
 body {
@@ -55,7 +57,7 @@ nav {
 .header-image {
     height: 230px;
     width: 35vw;
-    background-color: #666;
+    background-color: var(--placeholder-color);
     color: #ddd;
     flex-shrink: 0;
     display: flex;
@@ -100,7 +102,7 @@ h1 {
 }
 
 button {
-    background-color: #3882f6;
+    background-color: var(--button-color);
     color: var(--header-text-color);
     font-size: 16px;
     font-weight: 700;
@@ -108,4 +110,35 @@ button {
     border: none;
     margin: 8px 0;
     border-radius: 8px;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    border: 4px solid var(--button-color);
+    border-radius: 16px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark-background-color);
+    padding: 24px 0;
+}
+
+.item {
+    width: 150px;
+}
+
+.item p {
+    text-align: center;
+    width: 100%;
+    color: var(--placeholder-color);
+}
+
+.illustrations {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
 }
