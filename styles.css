@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
     --dark-background-color: #1f2937;
@@ -156,8 +156,54 @@ cite {
     display: block;
     width: 800px;
     margin: 0 auto;
+    padding-right: 45px;
     text-align: right;
     font-weight: bold;
     font-style: normal;
     font-size: 24px;
+}
+
+.third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.announcement {
+    width: 1025px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.caller h3,
+.caller p {
+    margin: 0;
+}
+
+.caller h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--header-text-color);
+}
+
+.caller p {
+    color: var(--header-secondary-text-color);
+    font-size: 18px;
+}
+
+.last-button {
+    border: 2px solid var(--header-text-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--header-secondary-text-color);
+    font-size: 18px;
 }
